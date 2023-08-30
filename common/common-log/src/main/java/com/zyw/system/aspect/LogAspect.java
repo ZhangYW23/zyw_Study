@@ -3,7 +3,7 @@ package com.zyw.system.aspect;
 import com.alibaba.fastjson.JSON;
 import com.zyw.common.utils.IpUtil;
 import com.zyw.common.utils.JwtHelper;
-import com.zyw.system.model.system.SysOperLog;
+import com.zyw.model.system.SysOperLog;
 import com.zyw.system.annotation.Log;
 import com.zyw.system.service.OperLogService;
 import org.aspectj.lang.JoinPoint;

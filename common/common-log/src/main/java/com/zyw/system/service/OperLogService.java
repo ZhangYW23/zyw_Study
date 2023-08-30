@@ -1,7 +1,7 @@
 package com.zyw.system.service;
 
-import com.zyw.system.model.system.SysOperLog;
-import com.zyw.system.model.vo.SysOperLogQueryVo;
+import com.zyw.model.system.SysOperLog;
+import com.zyw.model.vo.SysOperLogQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
 public interface OperLogService {
