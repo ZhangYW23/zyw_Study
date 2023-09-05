@@ -45,6 +45,7 @@ public class OperLogServiceImpl implements OperLogService {
         if(!StringUtils.isEmpty(createTimeEnd)) {
             wrapper.le("create_time",createTimeEnd);
         }
+        wrapper.orderByDesc("create_time");//列表逆序
         //调用mapper方法实现分页条件查询
         IPage<SysOperLog> sysOperLogPage = operLogMapper.selectPage(pageParam, wrapper);
         return sysOperLogPage;

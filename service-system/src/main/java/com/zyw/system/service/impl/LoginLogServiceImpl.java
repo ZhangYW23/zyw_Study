@@ -48,6 +48,7 @@ public class LoginLogServiceImpl implements LoginLogService {
         if(!StringUtils.isEmpty(createTimeBegin)) {
             wrapper.le("create_time",createTimeEnd);
         }
+        wrapper.orderByDesc("create_time");//列表记录逆序
         //调用mapper方法
         IPage<SysLoginLog> pageModel = loginLogMapper.selectPage(pageParam, wrapper);
         return pageModel;
